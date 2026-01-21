@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // q1
+//  var arr = ["ahmed","ali","zaid"];
+// ====================================== q2 ==============================================
+//      var obj = {
+    //         namr:"ahmed",
+//     age:21,
+// city:"karachi"
+//     }
+// ====================================== q3 ==============================================
+//  var arrString = ["ahmed","ali","zaid"];
+
+
+// ====================================== q4 ==============================================
+//  var numb = [1,2,3,4];
+
+// ====================================== q5 ==============================================
+// let boolArray = [true, false, true, false];
+
+// ====================================== q6 ==============================================
+// let mixedArray = [10, "Hello", true, 3.14, null, undefined];
+// ====================================== q7 ==============================================
+//  let qualifications = [
+    //         "SSC",
+    //         "HSC",
+    //         "BCS",
+    //         "BS",
+    //         "BCOM",
+    //         "MS",
+    //         "M. Phil.",
+    //         "PhD"
+    //     ];
+    
+    //     document.write("<ol>");
+        //         for(var i = 0; i < qualifications.length; i++){
+//             document.write("<li>" + qualifications[i] +"</li>");
+//         }
+//     document.write("</ol>");
+// ====================================== q8 ==============================================
+// let studentNames = ["Ali", "Ahmed", "Sara"];
+// let studentScores = [420, 380, 450];
+
+// let totalMarks = 500;
+
+// for(var i=0; i <studentNames.length; i++){
+    //     var per = studentScores[i] / totalMarks * 100;
+
+    //     document.write(`Score of ${studentNames[i]} is ${studentScores[i]} percentage: ${per} % <br> `);
+    // }
+    
+    // ====================================== q8 ==============================================
+  let colors = ["Red", "Blue", "Green"];
+//   document.write("<b>Initial Colors:</b> " + colors + "<br><br>");
+
+// --------------------------------------------------------------------------------
+
+//   var colorStart = prompt("please enter the color you want to add");
+//     colors.pop(colorEnd);
+//   document.write("<b>After adding color at start:</b> " + colorStart + "<br><br>");
+
+// --------------------------------------------------------------------------------
+    // add in last of array 
+//   var colorEnd = prompt("please enter the color you want to add");
+//     colors.push(colorEnd);
+//   document.write("<b>After adding color at end:</b> " + colorEnd + "<br><br>");
+
+//--------------------------------------------------------------------------------- 
+
+//  Add two more colors to the beginning
+// colors.unshif("yellow","pink");
+
+// renmove  first color
+// colors.shift();
+// document.write("<b>After removing first color:</b> " + colors + "<br><br>");
+
+// remove last color
+// colors.pop();
+// document.write("<b>After deleting last color:</b> " + colors + "<br><br>");
+
+// -------------------------------------------------------------------------------------
+// Add color at specific index
+// var addIndex = prompt("Please Enter Your Index Number");
+// var addColor = prompt("Please Enter Your Color");
+
+// colors.splice(addIndex,0,addColor);
+// document.write("<b>After adding color at specific index:</b> " + colors + "<br><br>");
+
+// ----------------------------------------------------------------------------------------
+// Delete color(s) from specific index
+// var COLORS = ["Red", "Green", "Blue", "Yellow", "Purple"];
+//     document.write("<b>Original COLORS:</b> " + COLORS + "<br><br>");
+
+//     // Ask user for index and count
+//     var deleteIndex = prompt("Enter index number from where you want to delete color(s):");
+//     var deleteCount = prompt("How many COLORS you want to delete?");
+
+//     // Remove color(s)
+//     COLORS.splice(deleteIndex, deleteCount);
+
+//     // Display updated array
+//     document.write("<b>Updated COLORS:</b> " + COLORS);
+
+// ================ q9============================================================
+//  by uing sort method 
+// var studentScores = [320, 230, 480, 120];
+// studentScores.sort(function(a,b){
+//     return a - b;
+// });
+
+// document.write("<b>Sorted Scores:</b> " + studentScores + "<br><br>");
+
+// =================== q10==========================================================
+// slice array copy nhi banta hai
+//  var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+//     document.write("<b>Cities list:</b> " + cities + "<br><br>");
+
+//   var selectedCities =  cities.slice(2,4);
+//         document.write("<b>Selected cities:</b> " + selectedCities);
+
+// =========================== q12=================================================
+
+// var arr = ["This ", " is ", " my ", " cat"];
+// var sentence = arr.join("");
+// document.write(sentence);
+
+// ======================= q13=======================================================
+//     var queue = [];
+
+//     queue.push("Ali");
+//     queue.push("Ahmed");
+//     queue.push("Sara");
+//     queue.push("Hassan");
+
+//     while(queue.length > 0){
+//  var  removeItem =  queue.shift();
+// document.write(removeItem);
+//     }
+
+// ======================= q14 =======================================================
+// let queue = [];
+
+// // Add values (enqueue)
+// queue.push(10);
+// queue.push(20);
+// queue.push(30);
+
+// ======================= q15 =======================================================
+ var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+ document.write("<select>");
+    
+ for(var i=0; i < manufacturers.length; i++){
+    document.write("<option>"+ manufacturers[i] + "</option>")
+ }   
+    
+document.write("</select>");
+
+</script>
+    
+</body>
+</html>
