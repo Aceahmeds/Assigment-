@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age Calculator</title>
+</head>
+<body>
+
+<script>
+  // User se DOB lena (YYYY-MM-DD format)
+  let dobInput = prompt("Enter your Date of Birth (YYYY-MM-DD):");
+
+  let dob = new Date(dobInput);
+  let now = new Date();
+
+  // Total difference in milliseconds
+  let diffMs = now - dob;
+
+  // Convert milliseconds
+  let seconds = Math.floor(diffMs / 1000);
+  let minutes = Math.floor(seconds / 60);
+  let hours = Math.floor(minutes / 60);
+  let days = Math.floor(hours / 24);
+
+  // Approx calculations
+  let years = Math.floor(days / 365);
+  let months = Math.floor((days % 365) / 30);
+  let remainingDays = (days % 365) % 30;
+
+  let remainingHours = hours % 24;
+  let remainingSeconds = seconds % 60;
+
+  document.write("<h2>Your Age is:</h2>");
+  document.write("Years: " + years + "<br>");
+  document.write("Months: " + months + "<br>");
+  document.write("Days: " + remainingDays + "<br>");
+  document.write("Hours: " + remainingHours + "<br>");
+  document.write("Seconds: " + remainingSeconds);
+</script>
+
+</body>
+</html>
